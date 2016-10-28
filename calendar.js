@@ -22,7 +22,6 @@
   function processInput(year){
     console.log('You Entered: '+ year);
     var firstDay = yearFirstDay(year);
-    console.log('firstDay Of Year: '+firstDay);
     var isLeapYear = checkLeapYear(year);
 
     while(currentMonth <= 12){
@@ -97,7 +96,6 @@
       var dayList = [];
       var week = dayNames[firstDay]
       for (var k = startDay; k <= totalDays; k = k + 7){
-        // console.log(week+':'+k);
         dayList.push(k);
       }
       data[week] = dayList;
