@@ -1,4 +1,4 @@
-(function Calendar () {
+(function() {
   var readline = require('readline');
   var currentMonth = 1;
   var numDays;
@@ -20,7 +20,6 @@
   });
 
   function processInput(year){
-    console.log('You Entered: '+ year);
     var firstDay = yearFirstDay(year);
     var isLeapYear = checkLeapYear(year);
 
